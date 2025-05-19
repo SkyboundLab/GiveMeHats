@@ -25,25 +25,15 @@ import java.util.List;
 
 
 public class WolfEarsItem extends TrinketItem implements TrinketRenderer {
-
-
     public WolfEarsItem(Settings settings) {
         super(settings);
-        
     }
 
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
-       tooltip.add(Text.translatable("text.wolf_ears"));
+        tooltip.add(Text.translatable("text.wolf_ears"));
     }
-
-
-
-
-
-
-
 
     @Override
     public void render(ItemStack stack, SlotReference slotReference, EntityModel<? extends LivingEntity> contextModel, MatrixStack matrixStack, VertexConsumerProvider vertexConsumers, int light, LivingEntity entity, float limbAngle, float limbDistance, float tickDelta, float animationProgress, float headYaw, float headPitch) {

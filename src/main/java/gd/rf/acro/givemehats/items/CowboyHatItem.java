@@ -22,32 +22,14 @@ import net.minecraft.world.World;
 import java.util.List;
 
 public class CowboyHatItem extends TrinketItem implements TrinketRenderer {
-
-
     public CowboyHatItem(Settings settings) {
         super(settings);
-        
     }
 
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
-       tooltip.add(Text.translatable("text.cowboy_hat"));
-    }
-
-
-    
-
-    @Override
-    public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if(entity.hasVehicle()
-                && entity.getVehicle().getType()== EntityType.HORSE
-                && (entity.getVehicle().isOnGround())
-                && entity.getVehicle().getVelocity().getX()<3
-                && entity.getVehicle().getVelocity().getZ()<3)
-        {
-            entity.getVehicle().setVelocity(entity.getVehicle().getVelocity().multiply(1.5,1.5,1.5));
-        }
+        tooltip.add(Text.translatable("text.cowboy_hat"));
     }
 
     @Override

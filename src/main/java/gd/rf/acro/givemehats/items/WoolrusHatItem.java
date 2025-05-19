@@ -25,29 +25,14 @@ import java.util.List;
 
 
 public class WoolrusHatItem extends TrinketItem implements TrinketRenderer {
-
-
     public WoolrusHatItem(Settings settings) {
         super(settings);
-        
     }
 
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
-       tooltip.add(Text.translatable("text.woolrushat"));
-    }
-
-
-    
-
-    @Override
-    public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if(entity.isSwimming())
-        {
-            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE,60,1,true,false));
-            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION,60,1,true,false));
-        }
+        tooltip.add(Text.translatable("text.woolrushat"));
     }
 
     @Override

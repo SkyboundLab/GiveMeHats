@@ -24,8 +24,6 @@ import net.minecraft.world.World;
 import java.util.List;
 
 public class BunnyEarsItem extends TrinketItem implements TrinketRenderer {
-
-
     public BunnyEarsItem(Settings settings) {
         super(settings);
     }
@@ -33,20 +31,8 @@ public class BunnyEarsItem extends TrinketItem implements TrinketRenderer {
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
-       tooltip.add(Text.translatable("text.bunny_ears"));
+        tooltip.add(Text.translatable("text.bunny_ears"));
     }
-
-
-    
-
-    @Override
-    public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if(!entity.hasStatusEffect(StatusEffects.JUMP_BOOST))
-        {
-            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST,100,3,true,false));
-        }
-    }
-
 
     @Override
     public void render(ItemStack stack, SlotReference slotReference, net.minecraft.client.render.entity.model.EntityModel<? extends LivingEntity> contextModel, MatrixStack matrixStack, net.minecraft.client.render.VertexConsumerProvider vertexConsumers, int light, LivingEntity entity, float limbAngle, float limbDistance, float tickDelta, float animationProgress, float headYaw, float headPitch) {

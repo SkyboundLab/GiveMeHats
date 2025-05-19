@@ -24,29 +24,14 @@ import java.util.List;
 
 
 public class IrishHatItem extends TrinketItem implements TrinketRenderer {
-
-
     public IrishHatItem(Settings settings) {
         super(settings);
-        
-
     }
 
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
-       tooltip.add(Text.translatable("text.irishhat"));
-    }
-
-
-    
-
-    @Override
-    public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if(entity.isSneaking())
-        {
-            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.LUCK,400,1,true,false));
-        }
+        tooltip.add(Text.translatable("text.irishhat"));
     }
 
     @Override

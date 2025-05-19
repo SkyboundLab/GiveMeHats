@@ -22,29 +22,14 @@ import net.minecraft.world.World;
 import java.util.List;
 
 public class FloatingHatItem extends TrinketItem implements TrinketRenderer {
-
-
     public FloatingHatItem(Settings settings) {
         super(settings);
-        
     }
 
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
-       tooltip.add(Text.translatable("text.floatinghat"));
-    }
-
-
-    
-
-    @Override
-    public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if(entity.fallDistance>2){
-            entity.fallDistance=0;
-            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING,120,1,true,false));
-
-        }
+        tooltip.add(Text.translatable("text.floatinghat"));
     }
 
     @Override

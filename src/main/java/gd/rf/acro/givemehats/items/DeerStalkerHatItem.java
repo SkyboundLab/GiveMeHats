@@ -24,32 +24,14 @@ import net.minecraft.world.World;
 import java.util.List;
 
 public class DeerStalkerHatItem extends TrinketItem implements TrinketRenderer {
-
-
     public DeerStalkerHatItem(Settings settings) {
         super(settings);
-        
     }
 
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
-       tooltip.add(Text.translatable("text.deerstalkerhat"));
-    }
-
-
-    
-
-    @Override
-    public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if(entity.isSneaking())
-        {
-            List<LivingEntity> entities = entity.getEntityWorld().getEntitiesByClass(LivingEntity.class,new Box(entity.getX()-15,entity.getY()-15,entity.getZ(),entity.getX()+15,entity.getY()+15,entity.getZ()+15), LivingEntity::isAlive);
-            entities.forEach(entityq ->
-            {
-                entityq.addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING,100,3,true,false));
-            });
-        }
+        tooltip.add(Text.translatable("text.deerstalkerhat"));
     }
 
     @Override

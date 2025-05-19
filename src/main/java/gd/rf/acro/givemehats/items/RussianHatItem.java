@@ -22,28 +22,14 @@ import java.util.List;
 
 
 public class RussianHatItem extends TrinketItem implements TrinketRenderer {
-
-
     public RussianHatItem(Settings settings) {
         super(settings);
-        
     }
 
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
-       tooltip.add(Text.translatable("text.russianhat"));
-    }
-
-
-    
-
-    @Override
-    public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if(entity.getActiveStatusEffects().size()>1)
-        {
-            entity.clearStatusEffects();
-        }
+        tooltip.add(Text.translatable("text.russianhat"));
     }
 
     @Override

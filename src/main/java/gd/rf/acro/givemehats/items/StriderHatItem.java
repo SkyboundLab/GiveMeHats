@@ -23,28 +23,14 @@ import net.minecraft.world.World;
 import java.util.List;
 
 public class StriderHatItem extends TrinketItem implements TrinketRenderer {
-
-
     public StriderHatItem(Settings settings) {
         super(settings);
-        
     }
 
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
-       tooltip.add(Text.translatable("text.striderhat"));
-    }
-
-
-    
-
-    @Override
-    public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if(!entity.hasStatusEffect(StatusEffects.FIRE_RESISTANCE))
-        {
-            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE,100,3,true,false));
-        }
+        tooltip.add(Text.translatable("text.striderhat"));
     }
 
     @Override

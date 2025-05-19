@@ -25,34 +25,14 @@ import net.minecraft.world.World;
 import java.util.List;
 
 public class CatEarsItem extends TrinketItem implements TrinketRenderer {
-
-
     public CatEarsItem(Settings settings) {
         super(settings);
-        
     }
 
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
-       tooltip.add(Text.translatable("text.cat_ears"));
-    }
-
-
-    
-
-    @Override
-    public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if(entity.isSneaking())
-        {
-            List<CreeperEntity> entities = entity.getEntityWorld().getEntitiesByClass(CreeperEntity.class,new Box(entity.getX()-15,entity.getY()-15,entity.getZ(),entity.getX()+15,entity.getY()+15,entity.getZ()+15), LivingEntity::isAlive);
-            entities.forEach(entityq ->
-            {
-                entityq.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS,100,5));
-                entityq.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS,100,1));
-            });
-        }
-
+        tooltip.add(Text.translatable("text.cat_ears"));
     }
 
     @Override

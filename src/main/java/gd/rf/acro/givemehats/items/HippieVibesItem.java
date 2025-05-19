@@ -23,30 +23,15 @@ import net.minecraft.world.World;
 import java.util.List;
 
 public class HippieVibesItem extends TrinketItem implements TrinketRenderer {
-
-
     public HippieVibesItem(Settings settings) {
         super(settings);
-        
     }
 
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
-       tooltip.add(Text.translatable("text.hippie_vibes"));
+        tooltip.add(Text.translatable("text.hippie_vibes"));
     }
-
-    @Override
-    public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-       if(entity.isSneaking())
-       {
-           entity.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION,1000));
-       }
-
-    }
-
-
-
 
     @Override
     public void render(ItemStack stack, SlotReference slotReference, EntityModel<? extends LivingEntity> contextModel, MatrixStack matrixStack, VertexConsumerProvider vertexConsumers, int light, LivingEntity entity, float limbAngle, float limbDistance, float tickDelta, float animationProgress, float headYaw, float headPitch) {

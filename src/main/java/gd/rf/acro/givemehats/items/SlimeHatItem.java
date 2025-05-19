@@ -23,32 +23,14 @@ import java.util.List;
 
 
 public class SlimeHatItem extends TrinketItem implements TrinketRenderer {
-
-
     public SlimeHatItem(Settings settings) {
         super(settings);
-        
     }
 
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
-       tooltip.add(Text.translatable("text.slimehat"));
-    }
-
-
-    
-
-    @Override
-    public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        //from slime block
-        if(!entity.getEntityWorld().getBlockState(entity.getBlockPos().down()).isAir() && entity.fallDistance>2){
-            Vec3d vec3d = entity.getVelocity();
-            if (vec3d.y < 0.0D) {
-                entity.setVelocity(vec3d.x, -vec3d.y * 0.8, vec3d.z);
-                entity.fallDistance=0;
-            }
-        }
+        tooltip.add(Text.translatable("text.slimehat"));
     }
 
     @Override

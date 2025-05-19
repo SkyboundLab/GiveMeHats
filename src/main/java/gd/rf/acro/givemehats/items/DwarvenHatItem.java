@@ -25,29 +25,14 @@ import java.util.List;
 
 
 public class DwarvenHatItem extends TrinketItem implements TrinketRenderer {
-
-
     public DwarvenHatItem(Settings settings) {
         super(settings);
-        
     }
 
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
-       tooltip.add(Text.translatable("text.dwarven_hat"));
-    }
-
-
-    
-
-    @Override
-    public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if(entity.getY()<20 && !entity.hasStatusEffect(StatusEffects.HASTE))
-        {
-            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.HASTE,200,2));
-        }
-
+        tooltip.add(Text.translatable("text.dwarven_hat"));
     }
 
     @Override

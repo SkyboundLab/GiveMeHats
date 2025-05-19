@@ -29,36 +29,15 @@ import java.util.List;
 
 
 public class BowlerHatItem extends TrinketItem implements TrinketRenderer {
-
-
     public BowlerHatItem(Item.Settings settings) {
         super(settings);
-
     }
 
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
-       tooltip.add(Text.translatable("text.bowler_hat"));
+        tooltip.add(Text.translatable("text.bowler_hat"));
     }
-
-
-
-
-
-
-    @Override
-    public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if(entity.isSprinting())
-        {
-            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED,10,1));
-        }
-    }
-
-
-
-
-
 
     @Override
     public void render(ItemStack stack, SlotReference slotReference, EntityModel<? extends LivingEntity> contextModel, MatrixStack matrixStack, VertexConsumerProvider vertexConsumers, int light, LivingEntity entity, float limbAngle, float limbDistance, float tickDelta, float animationProgress, float headYaw, float headPitch) {

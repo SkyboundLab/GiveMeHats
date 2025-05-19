@@ -22,28 +22,14 @@ import net.minecraft.world.World;
 import java.util.List;
 
 public class SantarHatItem extends TrinketItem implements TrinketRenderer {
-
-
     public SantarHatItem(Settings settings) {
         super(settings);
-        
     }
 
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
-       tooltip.add(Text.translatable("text.santahat"));
-    }
-
-
-    
-
-    @Override
-    public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if(entity.getEntityWorld().getBlockState(entity.getBlockPos().down()).getBlock()== Blocks.WATER)
-        {
-            entity.getEntityWorld().setBlockState(entity.getBlockPos().down(),Blocks.FROSTED_ICE.getDefaultState());
-        }
+        tooltip.add(Text.translatable("text.santahat"));
     }
 
     @Override

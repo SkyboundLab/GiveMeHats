@@ -23,22 +23,15 @@ import net.minecraft.world.World;
 import java.util.List;
 
 public class FezHatItem extends TrinketItem implements TrinketRenderer {
-
-
     public FezHatItem(Settings settings) {
         super(settings);
-        
     }
 
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
-       tooltip.add(Text.translatable("text.fez"));
+        tooltip.add(Text.translatable("text.fez"));
     }
-
-
-
-
 
     @Override
     public void render(ItemStack stack, SlotReference slotReference, EntityModel<? extends LivingEntity> contextModel, MatrixStack matrixStack, VertexConsumerProvider vertexConsumers, int light, LivingEntity entity, float limbAngle, float limbDistance, float tickDelta, float animationProgress, float headYaw, float headPitch) {

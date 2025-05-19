@@ -25,32 +25,14 @@ import java.util.List;
 
 
 public class VikingHatItem extends TrinketItem implements TrinketRenderer {
-
-
     public VikingHatItem(Settings settings) {
         super(settings);
-        
     }
 
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
-       tooltip.add(Text.translatable("text.viking_hat"));
-    }
-
-
-    
-
-    @Override
-    public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if(entity.getWorld().isRaining() && !entity.hasStatusEffect(StatusEffects.STRENGTH))
-        {
-            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH,200));
-        }
-        if(entity.hasVehicle() && entity.getVehicle() instanceof BoatEntity && !entity.hasStatusEffect(StatusEffects.NIGHT_VISION))
-        {
-            entity.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION,400));
-        }
+        tooltip.add(Text.translatable("text.viking_hat"));
     }
 
     @Override

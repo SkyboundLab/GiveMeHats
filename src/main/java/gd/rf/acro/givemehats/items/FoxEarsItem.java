@@ -25,32 +25,14 @@ import java.util.List;
 
 
 public class FoxEarsItem extends TrinketItem implements TrinketRenderer {
-
-
     public FoxEarsItem(Settings settings) {
         super(settings);
-        
     }
 
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
-       tooltip.add(Text.translatable("text.foxears"));
-    }
-
-
-    
-
-    @Override
-    public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if(entity.isSneaking())
-        {
-            List<AnimalEntity> entities = entity.getEntityWorld().getEntitiesByClass(AnimalEntity.class,new Box(entity.getX()-15,entity.getY()-15,entity.getZ(),entity.getX()+15,entity.getY()+15,entity.getZ()+15), LivingEntity::isAlive);
-            entities.forEach(entityq ->
-            {
-                entityq.setVelocity(Vec3d.ZERO);
-            });
-        }
+        tooltip.add(Text.translatable("text.foxears"));
     }
 
     @Override

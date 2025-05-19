@@ -30,23 +30,15 @@ import java.util.List;
 
 
 public class ElectricMouseEarsItem extends TrinketItem implements TrinketRenderer {
-
-
     public ElectricMouseEarsItem(Settings settings) {
         super(settings);
-        
     }
 
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
-       tooltip.add(Text.translatable("text.emousehat"));
+        tooltip.add(Text.translatable("text.emousehat"));
     }
-
-
-    
-
-
 
     @Override
     public void render(ItemStack stack, SlotReference slotReference, EntityModel<? extends LivingEntity> contextModel, MatrixStack matrixStack, VertexConsumerProvider vertexConsumers, int light, LivingEntity entity, float limbAngle, float limbDistance, float tickDelta, float animationProgress, float headYaw, float headPitch) {

@@ -23,32 +23,14 @@ import net.minecraft.world.World;
 import java.util.List;
 
 public class SailorHatItem extends TrinketItem implements TrinketRenderer {
-
-
     public SailorHatItem(Settings settings) {
         super(settings);
-        
     }
 
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
-       tooltip.add(Text.translatable("text.sailorhat"));
-    }
-
-
-    
-
-    @Override
-    public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-        if(entity.hasVehicle()
-                && entity.getVehicle().getType()==EntityType.BOAT
-                && entity.getWorld().getBlockState(entity.getBlockPos().down()).getBlock()== Blocks.WATER
-                && entity.getVehicle().getVelocity().getX()<3
-                && entity.getVehicle().getVelocity().getZ()<3)
-        {
-            entity.getVehicle().setVelocity(entity.getVehicle().getVelocity().multiply(1.1,0,1.1));
-        }
+        tooltip.add(Text.translatable("text.sailorhat"));
     }
 
     @Override
