@@ -3,18 +3,13 @@
   "category": "misc",
   "key": {
     "1": {
-      "item": "minecraft:blue_wool"
-    },
-    "2": {
-      "item": "minecraft:white_wool"
-    },
-    "3": {
-      "item": "minecraft:green_wool"
+      "item": "givemehats:top_hat"
     }
   },
   "pattern": [
-    "121",
-    "131"
+    " X ",
+    " X ",
+    " X "
   ],
   "show_notification": true,
   "result": {

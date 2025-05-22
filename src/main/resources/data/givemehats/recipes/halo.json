@@ -3,18 +3,15 @@
   "category": "misc",
   "key": {
     "1": {
-      "item": "minecraft:blue_wool"
+      "item": "minecraft:glowstone_dust"
     },
     "2": {
-      "item": "minecraft:white_wool"
-    },
-    "3": {
-      "item": "minecraft:green_wool"
+      "item": "minecraft:phantom_membrane"
     }
   },
   "pattern": [
-    "121",
-    "131"
+    "111",
+    "121"
   ],
   "show_notification": true,
   "result": {

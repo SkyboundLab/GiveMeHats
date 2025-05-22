@@ -3,18 +3,19 @@
   "category": "misc",
   "key": {
     "1": {
-      "item": "minecraft:blue_wool"
+      "item": "minecraft:feather"
     },
     "2": {
-      "item": "minecraft:white_wool"
+      "item": "minecraft:pink_wool"
     },
     "3": {
-      "item": "minecraft:green_wool"
+      "item": "minecraft:gray_wool"
     }
   },
   "pattern": [
-    "121",
-    "131"
+    "1 1",
+    "2 2",
+    "3 3"
   ],
   "show_notification": true,
   "result": {

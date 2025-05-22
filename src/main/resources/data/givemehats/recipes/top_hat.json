@@ -2,22 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "1": {
+    "X": {
       "item": "minecraft:blue_wool"
-    },
-    "2": {
-      "item": "minecraft:white_wool"
-    },
-    "3": {
-      "item": "minecraft:green_wool"
     }
   },
   "pattern": [
-    "121",
-    "131"
+    " X",
+    " X"
   ],
   "show_notification": true,
   "result": {
-    "item": "givemehats:top_hat"
+    "item": "givemehats:bowler_hat"
   }
 }

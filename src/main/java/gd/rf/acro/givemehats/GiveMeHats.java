@@ -68,7 +68,6 @@ public class GiveMeHats implements ModInitializer {
 	public static final RussianHatItem RUSSIAN_HAT_ITEM = new RussianHatItem(new Item.Settings());
 	public static final StriderHatItem STRIDER_HAT_ITEM = new StriderHatItem(new Item.Settings());
 	public static final WoolrusHatItem WOOLRUS_HAT_ITEM = new WoolrusHatItem(new Item.Settings());
-	public static final TaterHatItem LIL_TATER_HAT_ITEM = new TaterHatItem(new Item.Settings());
 	public static final BunnySpaceHelmet BUNNY_SPACE_HELMET = new BunnySpaceHelmet(new Item.Settings());
 	public static final IrishHatItem IRISH_HAT_ITEM = new IrishHatItem(new Item.Settings());
 	public static final GolemBucketItem GOLEM_BUCKET_ITEM = new GolemBucketItem(new Item.Settings());
@@ -171,8 +170,6 @@ public class GiveMeHats implements ModInitializer {
 		{LOADED_HATS.add( SLIME_HAT_ITEM);}
 		if(ConfigUtils.config.getOrDefault("enable_striderhat","1").equals("1"))
 		{LOADED_HATS.add( STRIDER_HAT_ITEM);}
-		if(ConfigUtils.config.getOrDefault("enable_taterhat","1").equals("1"))
-		{LOADED_HATS.add( LIL_TATER_HAT_ITEM);}
 		if(ConfigUtils.config.getOrDefault("enable_tophat","1").equals("1"))
 		{LOADED_HATS.add( TOP_HAT_ITEM);}
 		if(ConfigUtils.config.getOrDefault("enable_topesthat","1").equals("1"))

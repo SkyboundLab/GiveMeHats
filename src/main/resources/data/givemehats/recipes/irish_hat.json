@@ -3,18 +3,12 @@
   "category": "misc",
   "key": {
     "1": {
-      "item": "minecraft:blue_wool"
-    },
-    "2": {
-      "item": "minecraft:white_wool"
-    },
-    "3": {
-      "item": "minecraft:green_wool"
+      "item": "regions_unexplored:clover"
     }
   },
   "pattern": [
-    "121",
-    "131"
+    "111",
+    "1 1"
   ],
   "show_notification": true,
   "result": {

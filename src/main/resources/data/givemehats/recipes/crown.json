@@ -3,18 +3,18 @@
   "category": "misc",
   "key": {
     "1": {
-      "item": "minecraft:blue_wool"
+      "item": "minecraft:gold_nugget"
     },
     "2": {
-      "item": "minecraft:white_wool"
+      "item": "minecraft:golden_helmet"
     },
     "3": {
-      "item": "minecraft:green_wool"
+      "item": "minecraft:gold_ingot"
     }
   },
   "pattern": [
-    "121",
-    "131"
+    "111",
+    "323"
   ],
   "show_notification": true,
   "result": {
