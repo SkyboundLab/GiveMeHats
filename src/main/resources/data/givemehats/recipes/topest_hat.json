@@ -7,9 +7,9 @@
     }
   },
   "pattern": [
-    " X ",
-    " X ",
-    " X "
+    " 1 ",
+    " 1 ",
+    " 1 "
   ],
   "show_notification": true,
   "result": {
