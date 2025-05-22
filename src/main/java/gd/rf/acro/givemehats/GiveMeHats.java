@@ -132,112 +132,85 @@ public class GiveMeHats implements ModInitializer {
 	public static void genHatsList()
 	{
 		LOADED_HATS = new ArrayList<>();
-		if(ConfigUtils.config.getOrDefault("enable_bowlerhat","1").equals("1"))
-		{LOADED_HATS.add( BOWLER_HAT_ITEM);}
-		if(ConfigUtils.config.getOrDefault("enable_bunnyears","1").equals("1"))
-		{LOADED_HATS.add( BUNNY_EARS_ITEM);}
-		if(ConfigUtils.config.getOrDefault("enable_bunnyspacehelmet","1").equals("1"))
-		{LOADED_HATS.add( BUNNY_SPACE_HELMET);}
-		if(ConfigUtils.config.getOrDefault("enable_catears","1").equals("1"))
-		{LOADED_HATS.add( CAT_EARS_HAT_ITEM);}
-		if(ConfigUtils.config.getOrDefault("enable_cowboyhat","1").equals("1"))
-		{LOADED_HATS.add( COWBOY_HAT_ITEM);}
-		if(ConfigUtils.config.getOrDefault("enable_crown","1").equals("1"))
-		{LOADED_HATS.add( CROWN_ITEM);}
-		if(ConfigUtils.config.getOrDefault("enable_deerstalkerhat","1").equals("1"))
-		{LOADED_HATS.add( DEER_STALKER_HAT_ITEM);}
-		if(ConfigUtils.config.getOrDefault("enable_electricmouseears","1").equals("1"))
-		{LOADED_HATS.add( ELECTRIC_MOUSE_EARS_HAT_ITEM);}
-		if(ConfigUtils.config.getOrDefault("enable_fez","1").equals("1"))
-		{LOADED_HATS.add( FEZ_HAT_ITEM);}
-		if(ConfigUtils.config.getOrDefault("enable_floatinghat","1").equals("1"))
-		{LOADED_HATS.add( FLOATING_HAT_ITEM);}
-		if(ConfigUtils.config.getOrDefault("enable_foxears","1").equals("1"))
-		{LOADED_HATS.add( FOX_EARS_HAT_ITEM);}
-		if(ConfigUtils.config.getOrDefault("enable_golembucket","1").equals("1"))
-		{LOADED_HATS.add( GOLEM_BUCKET_ITEM);}
-		if(ConfigUtils.config.getOrDefault("enable_irishhat","1").equals("1"))
-		{LOADED_HATS.add( IRISH_HAT_ITEM);}
-		if(ConfigUtils.config.getOrDefault("enable_jojohat","1").equals("1"))
-		{LOADED_HATS.add( JOJO_HAT_ITEM);}
-		if(ConfigUtils.config.getOrDefault("enable_russianhat","1").equals("1"))
-		{LOADED_HATS.add( RUSSIAN_HAT_ITEM);}
-		if(ConfigUtils.config.getOrDefault("enable_sailorhat","1").equals("1"))
-		{LOADED_HATS.add( SAILOR_HAT_ITEM);}
-		if(ConfigUtils.config.getOrDefault("enable_santahat","1").equals("1"))
-		{LOADED_HATS.add( SANTAR_HAT_ITEM);}
-		if(ConfigUtils.config.getOrDefault("enable_slimehat","1").equals("1"))
-		{LOADED_HATS.add( SLIME_HAT_ITEM);}
-		if(ConfigUtils.config.getOrDefault("enable_striderhat","1").equals("1"))
-		{LOADED_HATS.add( STRIDER_HAT_ITEM);}
-		if(ConfigUtils.config.getOrDefault("enable_tophat","1").equals("1"))
-		{LOADED_HATS.add( TOP_HAT_ITEM);}
-		if(ConfigUtils.config.getOrDefault("enable_topesthat","1").equals("1"))
-		{LOADED_HATS.add( TOPEST_HAT_ITEM);}
-		if(ConfigUtils.config.getOrDefault("enable_witchhat","1").equals("1"))
-		{LOADED_HATS.add( WITCH_HAT_ITEM);}
-		if(ConfigUtils.config.getOrDefault("enable_wolfears","1").equals("1"))
-		{LOADED_HATS.add( WOLF_EARS_ITEM);}
-		if(ConfigUtils.config.getOrDefault("enable_woolrushat","1").equals("1"))
-		{LOADED_HATS.add( WOOLRUS_HAT_ITEM);}
-		if(ConfigUtils.config.getOrDefault("enable_vikinghat","1").equals("1"))
-		{LOADED_HATS.add( VIKING_HAT_ITEM);}
-		if(ConfigUtils.config.getOrDefault("enable_dwarvenhat","1").equals("1"))
-		{LOADED_HATS.add( DWARVEN_HAT_ITEM);}
-		if(ConfigUtils.config.getOrDefault("enable_hippievibes","1").equals("1"))
-		{LOADED_HATS.add( HIPPIE_VIBES_ITEM);}
-		if(ConfigUtils.config.getOrDefault("enable_halo","1").equals("1"))
-		{LOADED_HATS.add( HALO_ITEM);}
 
-        LOADED_HATS.add(MIKU_HAT_BR_ELECTRICIAN_ITEM);
-        LOADED_HATS.add(MIKU_HAT_REINDEER_ITEM);
-        LOADED_HATS.add(MIKU_HAT_BR_SP_ITEM);
-        LOADED_HATS.add(MIKU_HAT_FROG_ITEM);
-        LOADED_HATS.add(MIKU_HAT_FRANKENSTEIN_ITEM);
-        LOADED_HATS.add(MIKU_HAT_BR_BRAID_ITEM);
-        LOADED_HATS.add(MIKU_HAT_BR_AM_ITEM);
-        LOADED_HATS.add(MIKU_HAT_DEVIL_ITEM);
-        LOADED_HATS.add(MIKU_HAT_MICHAEL_MYERS_ITEM);
-        LOADED_HATS.add(MIKU_HAT_BR_FUT_FLA_ITEM);
-        LOADED_HATS.add(MIKU_HAT_URAOTOMELOVERS_ITEM);
-        LOADED_HATS.add(MIKU_HAT_GHOSTFACE_ITEM);
-        LOADED_HATS.add(MIKU_HAT_HACHUNE_GUN_ITEM);
-        LOADED_HATS.add(MIKU_HAT_JASON_ITEM);
-        LOADED_HATS.add(MIKU_HAT_BR_ITEM);
-        LOADED_HATS.add(MIKU_HAT_HELLOPLANET_ITEM);
-        LOADED_HATS.add(MIKU_HAT_VAMPIRE_ITEM);
-        LOADED_HATS.add(MIKU_HAT_PATATA_ITEM);
-        LOADED_HATS.add(AIKO_HAT_ITEM);
-        LOADED_HATS.add(MIKU_HAT_HACHUNE_ITEM);
-        LOADED_HATS.add(MIKU_HAT_XMAS_TREE_ITEM);
-        LOADED_HATS.add(MIKU_HAT_SANTA_ELF_ITEM);
-        LOADED_HATS.add(MIKU_HAT_BR_BEACH_ITEM);
-        LOADED_HATS.add(MIKU_HAT_BR_GO_ITEM);
-        LOADED_HATS.add(MIKU_HAT_BR_BA_DRUM_ITEM);
-        LOADED_HATS.add(MIKU_HAT_BIK_ITEM);
-        LOADED_HATS.add(MIKU_HAT_SANTA_ITEM);
-        LOADED_HATS.add(MIKU_HAT_BR_RS_ITEM);
-        LOADED_HATS.add(MIKU_HAT_ZATSUNE_ITEM);
-        LOADED_HATS.add(MIKU_HAT_GHOST_ITEM);
-        LOADED_HATS.add(MIKU_HAT_MUMMY_ITEM);
-        LOADED_HATS.add(MIKU_HAT_ITEM);
-        LOADED_HATS.add(MIKU_HAT_PATATI_ITEM);
-        LOADED_HATS.add(MIKU_HAT_BR_FUT_CAM_ITEM);
-        LOADED_HATS.add(MIKU_HAT_SENBONZAKURA_ITEM);
-        LOADED_HATS.add(MIKU_HAT_BR_BA_ITEM);
-        LOADED_HATS.add(MIKU_HAT_PERSONADANCING_ITEM);
-        LOADED_HATS.add(MIKU_HAT_INFINITY_ITEM);
-        LOADED_HATS.add(MIKU_HAT_BR_SCHOOL_PE_ITEM);
-        LOADED_HATS.add(MIKU_HAT_BR_BROWN_BRO_ITEM);
-        LOADED_HATS.add(MIKU_HAT_BR_FUT_CRVG_ITEM);
-        LOADED_HATS.add(MIKU_HAT_CLOWN_ITEM);
-        LOADED_HATS.add(MIKU_HAT_PUMPKIN_ITEM);
-        LOADED_HATS.add(MIKU_HAT_MUSHROOM_ITEM);
-        LOADED_HATS.add(MIKU_HAT_BR_MG_ITEM);
-        LOADED_HATS.add(MIKU_HAT_BR_PA_ITEM);
-        LOADED_HATS.add(MIKU_HAT_WEREWOMAN_ITEM);
-        LOADED_HATS.add(MIKU_HAT_BR_BIK_ORANGE_ITEM);
-        LOADED_HATS.add(MIKU_HAT_WITCH_ITEM);
+		LOADED_HATS.add(BOWLER_HAT_ITEM);
+		LOADED_HATS.add(BUNNY_EARS_ITEM);
+		LOADED_HATS.add(BUNNY_SPACE_HELMET);
+		LOADED_HATS.add(CAT_EARS_HAT_ITEM);
+		LOADED_HATS.add(COWBOY_HAT_ITEM);
+		LOADED_HATS.add(CROWN_ITEM);
+		LOADED_HATS.add(DEER_STALKER_HAT_ITEM);
+		LOADED_HATS.add(ELECTRIC_MOUSE_EARS_HAT_ITEM);
+		LOADED_HATS.add(FEZ_HAT_ITEM);
+		LOADED_HATS.add(FLOATING_HAT_ITEM);
+		LOADED_HATS.add(FOX_EARS_HAT_ITEM);
+		LOADED_HATS.add(GOLEM_BUCKET_ITEM);
+		LOADED_HATS.add(IRISH_HAT_ITEM);
+		LOADED_HATS.add(JOJO_HAT_ITEM);
+		LOADED_HATS.add(RUSSIAN_HAT_ITEM);
+		LOADED_HATS.add(SAILOR_HAT_ITEM);
+		LOADED_HATS.add(SANTAR_HAT_ITEM);
+		LOADED_HATS.add(SLIME_HAT_ITEM);
+		LOADED_HATS.add(STRIDER_HAT_ITEM);
+		LOADED_HATS.add(TOP_HAT_ITEM);
+		LOADED_HATS.add(TOPEST_HAT_ITEM);
+		LOADED_HATS.add(WITCH_HAT_ITEM);
+		LOADED_HATS.add(WOLF_EARS_ITEM);
+		LOADED_HATS.add(WOOLRUS_HAT_ITEM);
+		LOADED_HATS.add(VIKING_HAT_ITEM);
+		LOADED_HATS.add(DWARVEN_HAT_ITEM);
+		LOADED_HATS.add(HIPPIE_VIBES_ITEM);
+		LOADED_HATS.add(HALO_ITEM);
+
+		LOADED_HATS.add(MIKU_HAT_BR_ELECTRICIAN_ITEM);
+		LOADED_HATS.add(MIKU_HAT_REINDEER_ITEM);
+		LOADED_HATS.add(MIKU_HAT_BR_SP_ITEM);
+		LOADED_HATS.add(MIKU_HAT_FROG_ITEM);
+		LOADED_HATS.add(MIKU_HAT_FRANKENSTEIN_ITEM);
+		LOADED_HATS.add(MIKU_HAT_BR_BRAID_ITEM);
+		LOADED_HATS.add(MIKU_HAT_BR_AM_ITEM);
+		LOADED_HATS.add(MIKU_HAT_DEVIL_ITEM);
+		LOADED_HATS.add(MIKU_HAT_MICHAEL_MYERS_ITEM);
+		LOADED_HATS.add(MIKU_HAT_BR_FUT_FLA_ITEM);
+		LOADED_HATS.add(MIKU_HAT_URAOTOMELOVERS_ITEM);
+		LOADED_HATS.add(MIKU_HAT_GHOSTFACE_ITEM);
+		LOADED_HATS.add(MIKU_HAT_HACHUNE_GUN_ITEM);
+		LOADED_HATS.add(MIKU_HAT_JASON_ITEM);
+		LOADED_HATS.add(MIKU_HAT_BR_ITEM);
+		LOADED_HATS.add(MIKU_HAT_HELLOPLANET_ITEM);
+		LOADED_HATS.add(MIKU_HAT_VAMPIRE_ITEM);
+		LOADED_HATS.add(MIKU_HAT_PATATA_ITEM);
+		LOADED_HATS.add(AIKO_HAT_ITEM);
+		LOADED_HATS.add(MIKU_HAT_HACHUNE_ITEM);
+		LOADED_HATS.add(MIKU_HAT_XMAS_TREE_ITEM);
+		LOADED_HATS.add(MIKU_HAT_SANTA_ELF_ITEM);
+		LOADED_HATS.add(MIKU_HAT_BR_BEACH_ITEM);
+		LOADED_HATS.add(MIKU_HAT_BR_GO_ITEM);
+		LOADED_HATS.add(MIKU_HAT_BR_BA_DRUM_ITEM);
+		LOADED_HATS.add(MIKU_HAT_BIK_ITEM);
+		LOADED_HATS.add(MIKU_HAT_SANTA_ITEM);
+		LOADED_HATS.add(MIKU_HAT_BR_RS_ITEM);
+		LOADED_HATS.add(MIKU_HAT_ZATSUNE_ITEM);
+		LOADED_HATS.add(MIKU_HAT_GHOST_ITEM);
+		LOADED_HATS.add(MIKU_HAT_MUMMY_ITEM);
+		LOADED_HATS.add(MIKU_HAT_ITEM);
+		LOADED_HATS.add(MIKU_HAT_PATATI_ITEM);
+		LOADED_HATS.add(MIKU_HAT_BR_FUT_CAM_ITEM);
+		LOADED_HATS.add(MIKU_HAT_SENBONZAKURA_ITEM);
+		LOADED_HATS.add(MIKU_HAT_BR_BA_ITEM);
+		LOADED_HATS.add(MIKU_HAT_PERSONADANCING_ITEM);
+		LOADED_HATS.add(MIKU_HAT_INFINITY_ITEM);
+		LOADED_HATS.add(MIKU_HAT_BR_SCHOOL_PE_ITEM);
+		LOADED_HATS.add(MIKU_HAT_BR_BROWN_BRO_ITEM);
+		LOADED_HATS.add(MIKU_HAT_BR_FUT_CRVG_ITEM);
+		LOADED_HATS.add(MIKU_HAT_CLOWN_ITEM);
+		LOADED_HATS.add(MIKU_HAT_PUMPKIN_ITEM);
+		LOADED_HATS.add(MIKU_HAT_MUSHROOM_ITEM);
+		LOADED_HATS.add(MIKU_HAT_BR_MG_ITEM);
+		LOADED_HATS.add(MIKU_HAT_BR_PA_ITEM);
+		LOADED_HATS.add(MIKU_HAT_WEREWOMAN_ITEM);
+		LOADED_HATS.add(MIKU_HAT_BR_BIK_ORANGE_ITEM);
+		LOADED_HATS.add(MIKU_HAT_WITCH_ITEM);
 	}
 
 	private String cc2uc(String value)
@@ -262,8 +235,7 @@ public class GiveMeHats implements ModInitializer {
 
 	}
 
-	public static void translateToFace(MatrixStack matrices, EntityModel<? extends LivingEntity> model,
-									   LivingEntity entity, float headYaw, float headPitch) {
+	public static void translateToFace(MatrixStack matrices, EntityModel<? extends LivingEntity> model, LivingEntity entity, float headYaw, float headPitch) {
 
 		if (entity.isInSwimmingPose() || entity.isFallFlying()) {
 			if(model instanceof PlayerEntityModel)

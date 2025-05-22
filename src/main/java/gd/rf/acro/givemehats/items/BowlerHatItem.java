@@ -29,7 +29,7 @@ import java.util.List;
 
 
 public class BowlerHatItem extends TrinketItem implements TrinketRenderer {
-    public BowlerHatItem(Item.Settings settings) {
+    public BowlerHatItem(Settings settings) {
         super(settings);
     }
 
