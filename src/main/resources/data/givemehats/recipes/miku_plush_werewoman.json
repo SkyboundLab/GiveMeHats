@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:bone"
+    },
+    "c": {
+      "item": "minecraft:cyan_wool"
+    },
+    "l": {
+      "item": "minecraft:light_gray_wool"
+    }
+  },
+  "pattern": [
+    "clc",
+    "cbc"
+  ],
+  "result": {
+    "item": "givemehats:miku_hat_werewoman"
+  },
+  "show_notification": true
+}

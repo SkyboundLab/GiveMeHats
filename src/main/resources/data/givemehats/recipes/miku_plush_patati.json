@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:white_wool"
+    },
+    "c": {
+      "item": "minecraft:yellow_wool"
+    },
+    "l": {
+      "item": "minecraft:light_blue_wool"
+    }
+  },
+  "pattern": [
+    "clc",
+    "cbc"
+  ],
+  "result": {
+    "item": "givemehats:miku_hat_patati"
+  },
+  "show_notification": true
+}
