@@ -14,10 +14,20 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.text.Text;
+import net.minecraft.world.World;
+import net.minecraft.client.item.TooltipContext;
+import java.util.List;
 
 public class MikuHatBrBikOrangeItem extends TrinketItem implements TrinketRenderer {
     public MikuHatBrBikOrangeItem(Item.Settings settings) {
         super(settings);
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
+        super.appendTooltip(stack, world, tooltip, context);
+        tooltip.add(Text.translatable("text.miku_hat_br_bik_orange"));
     }
 
     @Override

@@ -79,7 +79,6 @@ public class GiveMeHats implements ModInitializer {
 	public static final DwarvenHatItem DWARVEN_HAT_ITEM = new DwarvenHatItem(new Item.Settings());
 	public static final HippieVibesItem HIPPIE_VIBES_ITEM = new HippieVibesItem(new Item.Settings());
 	public static final HaloItem HALO_ITEM = new HaloItem(new Item.Settings());
-	// public static final MikuHatItem MIKU_HAT_ITEM = new MikuHatItem(new Item.Settings());
     public static final MikuHatBrElectricianItem MIKU_HAT_BR_ELECTRICIAN_ITEM = new MikuHatBrElectricianItem(new Item.Settings());
     public static final MikuHatReindeerItem MIKU_HAT_REINDEER_ITEM = new MikuHatReindeerItem(new Item.Settings());
     public static final MikuHatBrSpItem MIKU_HAT_BR_SP_ITEM = new MikuHatBrSpItem(new Item.Settings());
@@ -193,7 +192,6 @@ public class GiveMeHats implements ModInitializer {
 		if(ConfigUtils.config.getOrDefault("enable_halo","1").equals("1"))
 		{LOADED_HATS.add( HALO_ITEM);}
 
-        // LOADED_HATS.add(MIKU_HAT_ITEM);
         LOADED_HATS.add(MIKU_HAT_BR_ELECTRICIAN_ITEM);
         LOADED_HATS.add(MIKU_HAT_REINDEER_ITEM);
         LOADED_HATS.add(MIKU_HAT_BR_SP_ITEM);
