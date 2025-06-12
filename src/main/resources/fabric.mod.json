@@ -2,34 +2,28 @@
 	"schemaVersion": 1,
 	"id": "givemehats",
 	"version": "${version}",
-	"name": "GiveMehats",
-	"description": "Hats with effects!",
+	"name": "GiveMeHats",
+	"description": "Cosmetic hats for Minecraft",
 	"authors": [
+		"SkyboundLab",
 		"Acrogenous",
-		"SkyboundLab"
+		"4ny"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "MIT",
-	"icon": "assets/givemehats/icon.jpg",
+	"icon": "icon.jpg",
 	"environment": "*",
 	"entrypoints": {
-		"main": [
-			"gd.rf.acro.givemehats.GiveMeHats"
-		]
+		"main": ["gd.rf.acro.givemehats.GiveMeHats"]
 	},
-	"mixins": [
-		"givemehats.mixins.json"
-	],
 	"depends": {
 		"fabricloader": ">=0.15.7",
 		"minecraft": "~1.20.1",
 		"java": ">=17",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
+		"fabric-api": "*",
+		"fabric-networking-api-v1": "*"
 	}
 }
